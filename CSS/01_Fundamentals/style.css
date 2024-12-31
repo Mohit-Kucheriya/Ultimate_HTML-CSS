@@ -1,0 +1,116 @@
+body {
+  font-family: Poppins, sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #e43953;
+}
+
+h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 18px;
+}
+
+/* Descendant Selector 
+footer p {
+  font-size: 14px;
+}
+*/
+
+#author {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.related-post-author {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.related {
+  list-style: none;
+}
+
+#main-header {
+  background-color: #f7f7f7;
+  border-top: 5px solid #e43953;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #e43953;
+  border-bottom: 5px solid #e43953;
+}
+
+/* Pseudo classes */
+li:first-child {
+  font-weight: bold;
+}
+
+li:nth-child(even) {
+  color: #e43953;
+}
+
+/* LVHA -  */
+a:link {
+  color: #e43953;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #e43953;
+}
+
+a:hover {
+  color: #e75e73;
+  text-decoration: underline;
+}
+
+a:active {
+  font-style: italic;
+}
+
+/* Resolving conflicts */
+
+#copyright {
+  text-align: center;
+  font-style: italic;
+  color: #444;
+  font-size: 14px;
+}
+
+.copyright {
+  color: #e43953;
+}
+
+footer p {
+  color: #e75e73;
+}
