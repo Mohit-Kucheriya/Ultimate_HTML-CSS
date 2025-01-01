@@ -1,6 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Poppins, sans-serif;
   color: #444;
+}
+
+/* Centering the page */
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#main-header {
+  background-color: #f7f7f7;
+  border-top: 5px solid #e43953;
+  padding: 40px 20px;
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #e43953;
+  border-bottom: 5px solid #e43953;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  width: 600px;
+}
+
+.html-article {
+  margin-bottom: 40px;
 }
 
 h1,
@@ -17,10 +48,12 @@ h1 {
 
 h2 {
   font-size: 36px;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -32,10 +65,17 @@ h4 {
 p {
   font-size: 18px;
   line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+ul,
+li {
+  margin-left: 50px;
 }
 
 li {
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /* Descendant Selector 
@@ -57,17 +97,6 @@ footer p {
 
 .related {
   list-style: none;
-}
-
-#main-header {
-  background-color: #f7f7f7;
-  border-top: 5px solid #e43953;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #e43953;
-  border-bottom: 5px solid #e43953;
 }
 
 /* Pseudo classes */
@@ -113,4 +142,9 @@ a:active {
 
 footer p {
   color: #e75e73;
+}
+
+.code-image {
+  width: 100%;
+  height: auto;
 }

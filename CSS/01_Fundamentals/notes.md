@@ -36,3 +36,9 @@
 8. Difference between '*' and 'body'
    '*' means all elements, no inheritance involves
    'body' whatever properties are defined in the body tag get's inherited to all the elements
+
+9. Collapsing margins - When we have two margins that occupies the same space, only one of them is visible on the page i.e. larger of the two.
+ 
+10. Inline elements - Takes only the width of the content inside the element
+
+11. Block elements - Takes the width of the entire element
