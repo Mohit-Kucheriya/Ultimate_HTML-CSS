@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: #444;
+}
+
+/* Centering the page */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#main-header {
+  background-color: #f7f7f7;
+  border-top: 5px solid #e43953;
+  padding: 40px 20px;
+  margin-bottom: 60px;
+}
+
+nav {
+  float: right;
+  margin-top: -30px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #e43953;
+  border-bottom: 5px solid #e43953;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  width: 300px;
+  float: right;
+}
+
+.html-article {
+  margin-bottom: 40px;
+  width: 800px;
+  float: left;
+}
+
+.author-image {
+  width: 80px;
+}
+
+h1,
+h2,
+h3 {
+  color: #e43953;
+}
+
+h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+ul,
+li {
+  padding: 10px 20px;
+}
+
+/* Descendant Selector 
+footer p {
+  font-size: 14px;
+}
+*/
+
+#author {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.related-post-author {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.related {
+  list-style: none;
+}
+
+/* Pseudo classes */
+li:first-child {
+  font-weight: bold;
+}
+
+li:nth-child(even) {
+  color: #e43953;
+}
+
+/* LVHA -  */
+a:link {
+  color: #e43953;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+a:visited {
+  color: #e43953;
+}
+
+a:hover {
+  color: #e75e73;
+  text-decoration: underline;
+}
+
+a:active {
+  font-style: italic;
+}
+
+/* Resolving conflicts */
+
+#copyright {
+  text-align: center;
+  font-style: italic;
+  color: #444;
+  font-size: 14px;
+  clear: both;
+}
+
+.copyright {
+  color: #e43953;
+}
+
+footer p {
+  color: #e75e73;
+}
+
+.code-image {
+  width: 100%;
+  height: auto;
+}
