@@ -133,10 +133,6 @@ a:hover {
   text-decoration: underline;
 }
 
-a:active {
-  font-style: italic;
-}
-
 /* Resolving conflicts */
 
 #copyright {
