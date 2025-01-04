@@ -155,3 +155,46 @@ button:hover {
   background-color: #fff;
   color: #000;
 }
+
+/* CHALLENGE #2 */
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+.shoe-img {
+  float: none;
+  margin: 0;
+}
+
+.details-container {
+  margin: 0;
+  margin-top: 10px;
+  flex: 1;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.shipping {
+  margin: 0;
+}
+
+.color-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.color-box {
+  margin: 0;
+}
+
+.product-container {
+  flex: 1;
+}
