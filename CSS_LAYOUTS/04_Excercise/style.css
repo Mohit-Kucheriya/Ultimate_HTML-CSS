@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", serif;
+
 }
 
 body {
@@ -9,8 +11,8 @@ body {
   line-height: 1.4;
 }
 
-.product-img {
-}
+/* .product-img {
+} */
 
 /* PRODUCT */
 .product {
@@ -55,8 +57,8 @@ body {
 .shipping {
   font-size: 12px;
   text-transform: uppercase;
-  font-weight: bold;
-  color: #777;
+  font-weight: 500;
+  color: #555;
 }
 
 .sale {
@@ -83,7 +85,7 @@ body {
 .more-info:link,
 .more-info:visited {
   color: black;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   display: inline-block;
 }
 
