@@ -1,200 +1,161 @@
-/* CHALLENGE #1 */
 * {
-  font-family: Poppins, sans-serif;
-  color: #000;
-  line-height: 1.5;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.4;
 }
 
-/* CONTAINER */
-.container {
+.product-img {
+}
+
+/* PRODUCT */
+.product {
+  border: 4px solid black;
   width: 825px;
   margin: 50px auto;
-  border: 4px solid #000;
   position: relative;
+
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
 }
 
-.secondary-heading {
+.product-title {
   text-align: center;
+  font-size: 22px;
   text-transform: uppercase;
   background-color: #f7f7f7;
   padding: 15px;
+  grid-column: 1 / -1;
 }
 
-.shoe-img {
-  float: left;
-  margin-right: 40px;
+/* PRODUCT INFORMATION */
+.product-info {
+  /*  (825 - 8 - 250 - 80) / 2  */
+  /*   width: 243px; */
+  flex: 1;
+  margin-top: 20px;
 }
 
-/* DETAILS CONTAINER */
-.details-container {
-  width: 243px;
-  float: left;
-  margin-right: 40px;
-  margin-top: 12px;
-}
-
-.sale {
-  position: absolute;
-  top: -15px;
-  left: -30px;
-  background-color: #e43953;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 13px;
-  padding: 5px 12px;
-  color: #fff;
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .price {
   font-size: 24px;
-  float: left;
 }
 
 .shipping {
+  font-size: 12px;
   text-transform: uppercase;
-  font-size: 14px;
-  color: #444;
-  margin-bottom: 20px;
-  float: right;
-  margin-top: 8px;
+  font-weight: bold;
+  color: #777;
 }
 
-.description {
-  font-size: 14px;
-  margin-bottom: 15px;
-  clear: both;
-  text-align: justify;
-}
-
-.color-box {
+.sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 7px 15px;
   display: inline-block;
-  width: 17px;
-  height: 17px;
-  margin: 10px 8px 0;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+
+  /*   width: 40px;
+  text-align: center; */
 }
 
-.color-box.black {
-  margin-left: 0;
-  background-color: #000;
-}
-
-.color-box.blue {
-  background-color: #007bff;
-}
-
-.color-box.red {
-  background-color: #dc3545;
-}
-
-.color-box.yellow {
-  background-color: #ffc107;
-}
-
-.color-box.green {
-  background-color: #28a745;
-}
-
-.color-box.brown {
-  background-color: #a52a2a;
+.product-description {
+  margin-bottom: 10px;
 }
 
 .more-info:link,
-.more-info:active {
-  color: #444;
-  font-size: 14px;
+.more-info:visited {
+  color: black;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
-.more-info:hover {
+.more-info:hover,
+.more-info:active {
   text-decoration: none;
 }
 
-/* PRODUCT CONTAINER */
-.product-container {
-  width: 243px;
-  float: left;
-  margin-top: 12px;
+.product-colors {
+  display: flex;
+  gap: 10px;
 }
 
-.product {
+.color {
+  background-color: #000;
+  height: 22px;
+  width: 22px;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+.color-red {
+  background-color: #ec2f2f;
+}
+.color-yellow {
+  background-color: #f0bf1e;
+}
+.color-green {
+  background-color: #90cc20;
+}
+.color-brown {
+  background-color: #885214;
+}
+
+/* PRODUCT DETAILS */
+.product-details {
+  /*   width: 243px; */
+  margin-top: 20px;
+  flex: 1;
+}
+
+.details-title {
   text-transform: uppercase;
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
-.product-info {
+.details-list {
   list-style: square;
   margin-left: 20px;
-  margin-bottom: 10px;
-  font-size: 14px;
 }
 
-.product-info-item {
+.details-list li {
   margin-bottom: 10px;
 }
 
-button {
+/* BUTTON */
+.add-cart {
   background-color: #000;
+  border: none;
   color: #fff;
   font-size: 20px;
   text-transform: uppercase;
   cursor: pointer;
+  padding: 15px;
   width: 100%;
-  padding: 12px 0;
-  outline: none;
-  border: none;
-  border-top: 4px solid #000;
+  border-top: 4px solid black;
+  grid-column: 1 / -1;
 }
 
-button:hover {
-  background-color: #fff;
+.add-cart:hover {
   color: #000;
-}
-
-/* CHALLENGE #2 */
-.row {
-  display: flex;
-  gap: 40px;
-}
-
-.shoe-img {
-  float: none;
-  margin: 0;
-}
-
-.details-container {
-  margin: 0;
-  margin-top: 10px;
-  flex: 1;
-}
-
-.price-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.shipping {
-  margin: 0;
-}
-
-.color-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.color-box {
-  margin: 0;
-}
-
-.product-container {
-  flex: 1;
+  background-color: #fff;
 }
