@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            font-family: "Poppins", sans-serif;
+            font-family: "Questrial", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pagination {
+            width: 800px;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 36px;
+        }
+
+        a {
+            text-decoration: none;
+            border-radius: 50%;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a:hover {
+            background-color: #087f5b;
+            color: #fff;
+        }
+
+        span {
+            font-size: 18px;
+
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span:hover {
+            background-color: #087f5b;
+            color: #fff;
+        }
+
+        .btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            outline: none;
+            border: 1px solid #087f5b;
+            cursor: pointer;
+        }
+
+        .btn-icon {
+            width: 24px;
+            height: 24px;
+            stroke: #087f5b;
+        }
+
+        .btn:hover {
+            background-color: #087f5b;
+        }
+
+        .btn:hover .btn-icon {
+            stroke: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagination">
+        <button class="btn btn--prev">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="btn-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+        </button>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <span>...</span>
+        <a href="#">21</a>
+        <button class="btn btn--next">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="btn-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+    </div>
+</body>
+
+</html>
