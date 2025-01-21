@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: "Poppins", sans-serif;
+            font-family: "Questrial", sans-serif;
+            line-height: 1;
+        }
+
+        body {
+            background-color: #f1f3f5;
+            height: 100vh;
+            text-align: center;
+            font-size: 18px;
+            display: grid;
+            grid-template-columns: 80px 400px 1fr 250px;
+            grid-template-rows: 50px 1fr;
+        }
+
+        nav,
+        main,
+        aside {
+            padding-top: 24px;
+        }
+
+        nav {
+            background-color: #f8f9fa;
+            grid-row: 1/-1;
+        }
+
+        menu {
+            background-color: #f1f3f5;
+            grid-column: 2/-1;
+
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 24px;
+        }
+
+        .menu-btn {
+            background-color: #212529;
+            color: #f8f9fa;
+            border: none;
+            padding: 6px 12px;
+            font-size: 16px;
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        .menu-btn:hover {
+            background-color: #343a40;
+        }
+
+        .menu-btn:last-child {
+            margin-left: auto;
+        }
+
+        section {
+            background-color: #e9ecef;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 24px;
+            overflow-y: scroll;
+        }
+
+        .email-inbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            height: 72px;
+            background-color: #343a40;
+            color: #f8f9fa;
+        }
+
+        main {
+            background-color: #dee2e6;
+        }
+
+        aside {
+            background-color: #ced4da;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Nav</nav>
+    <menu>
+        <button class="menu-btn">Inbox</button>
+        <button class="menu-btn">Sent</button>
+        <button class="menu-btn">Drafts</button>
+        <button class="menu-btn">Trash</button>
+    </menu>
+    <section>
+        <div class="email-inbox">Email-1</div>
+        <div class="email-inbox">Email-2</div>
+        <div class="email-inbox">Email-3</div>
+        <div class="email-inbox">Email-4</div>
+        <div class="email-inbox">Email-5</div>
+        <div class="email-inbox">Email-6</div>
+        <div class="email-inbox">Email-7</div>
+        <div class="email-inbox">Email-8</div>
+        <div class="email-inbox">Email-9</div>
+        <div class="email-inbox">Email-10</div>
+    </section>
+    <main>Main Email</main>
+    <aside>Additional</aside>
+</body>
+
+</html>
