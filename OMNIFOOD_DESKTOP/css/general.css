@@ -28,7 +28,8 @@ Others: #51cf66, #94d82d , #fcc419
   padding: 0;
   box-sizing: border-box;
 }
-*:focus{
+
+*:focus {
   outline: none;
 }
 
@@ -44,7 +45,6 @@ body {
   font-family: "Questrial", sans-serif;
   color: #444;
 }
-
 
 /* RE-USABLE CLASSES */
 .container {
@@ -76,8 +76,6 @@ body {
   column-gap: 8rem;
 }
 
-
-
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -89,6 +87,11 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }

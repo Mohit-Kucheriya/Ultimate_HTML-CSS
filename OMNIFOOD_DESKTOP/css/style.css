@@ -8,7 +8,8 @@
   background-color: #fdf2e9;
 }
 
-.header img {
+.header img,
+footer img {
   height: 6.4rem;
 }
 
@@ -25,7 +26,7 @@
   text-decoration: none;
   color: #444;
   font-size: 1.8rem;
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: 0.5px;
   transition: all 0.3s;
   outline: none;
@@ -33,7 +34,6 @@
 
 .nav-link:hover,
 .nav-link:active {
-  font-size: 1.8rem;
   color: #e67e22;
 }
 
@@ -343,15 +343,18 @@
 .pricing-section {
   padding: 9.6rem 0;
 }
+
 .pricing-item {
   border-radius: 0.8rem;
   width: 75%;
 }
+
 .pricing-item--starter {
   justify-self: end;
   padding: 4.6rem;
   border: 2px solid #fae5d3;
 }
+
 .pricing-item--complete {
   background-color: #fae5d3;
   padding: 4.8rem;
@@ -365,7 +368,7 @@
   top: 6%;
   right: -18%;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   padding: 0.8rem 8rem;
   background-color: #fcc419;
@@ -392,6 +395,7 @@
   font-weight: 900;
   margin-bottom: 1.2rem;
 }
+
 .pricing-price span {
   font-size: 3.2rem;
   font-weight: 600;
@@ -439,6 +443,7 @@
   line-height: 1.5;
   margin-bottom: 1.2rem;
 }
+
 .feature-description {
   font-size: 1.6rem;
   line-height: 1.6;
@@ -446,7 +451,7 @@
 
 /* CTA SECTION */
 .cta-section {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 9.6rem;
 }
 
 .cta {
@@ -458,6 +463,7 @@
   transition: all 0.3s;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 4.8rem 10rem 0px;
 }
+
 .cta-text-box {
   color: #45260a;
   padding: 4.8rem 6.4rem;
@@ -506,11 +512,16 @@
   background-color: #fae5d3;
 
   /* Add these to normalize */
-  line-height: 1.2; /* Match line-height */
-  appearance: none; /* Remove default browser styling for select */
-  -webkit-appearance: none; /* For WebKit browsers */
-  -moz-appearance: none; /* For Firefox */
-  box-sizing: border-box; /* Include padding and border in width/height */
+  line-height: 1.2;
+  /* Match line-height */
+  appearance: none;
+  /* Remove default browser styling for select */
+  -webkit-appearance: none;
+  /* For WebKit browsers */
+  -moz-appearance: none;
+  /* For Firefox */
+  box-sizing: border-box;
+  /* Include padding and border in width/height */
 }
 
 .cta-form button {
@@ -518,4 +529,104 @@
   cursor: pointer;
   background-color: #45260a;
   color: #fae5d3;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 9.6rem 0 12.8rem;
+  border-top: 1px solid #dadada;
+}
+
+.grid--5-footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-img {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-social-list {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #777;
+  transition: all 0.3s;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon:hover {
+  color: #444;
+}
+
+.footer-copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #777;
+  margin-top: auto;
+}
+
+.footer-address {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #777;
+  margin-bottom: 2.4rem;
+}
+
+.address-link:link,
+.address-link:visited {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.address-link:hover,
+.address-link:active {
+  color: #444;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #777;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #444;
 }
