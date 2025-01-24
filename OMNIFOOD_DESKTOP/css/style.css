@@ -292,6 +292,7 @@
 /* TESTIMONIAL SECTION */
 .testimonial-section {
   padding: 9.6rem 0;
+  background-color: #fae5d3;
 }
 
 .testimonial-img {
@@ -310,4 +311,30 @@
   font-size: 1.4rem;
   color: #777;
   font-style: italic;
+}
+
+/* GALLERY SECTION */
+.gallery-section {
+  background-color: #fae5d3;
+  padding: 5.2rem 0;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5.2rem;
+}
+
+.gallery-item{
+  overflow: hidden;
+}
+
+.gallery-img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.1);
 }
