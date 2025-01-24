@@ -288,3 +288,26 @@
   color: #e98b38;
   border-bottom: 1px solid transparent;
 }
+
+/* TESTIMONIAL SECTION */
+.testimonial-section {
+  padding: 9.6rem 0;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  font-size: 1.4rem;
+  color: #777;
+  font-style: italic;
+}
