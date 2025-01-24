@@ -28,6 +28,9 @@ Others: #51cf66, #94d82d , #fcc419
   padding: 0;
   box-sizing: border-box;
 }
+*:focus{
+  outline: none;
+}
 
 html {
   font-size: 62.5%;
@@ -41,6 +44,7 @@ body {
   font-family: "Questrial", sans-serif;
   color: #444;
 }
+
 
 /* RE-USABLE CLASSES */
 .container {
