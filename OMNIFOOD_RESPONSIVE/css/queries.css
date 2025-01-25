@@ -1,0 +1,264 @@
+/* BELOW 1200px for landscape Tablets */
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 0.5625 = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .primary-heading {
+    font-size: 4.4rem;
+  }
+
+  .secondary-heading {
+    font-size: 3.2rem;
+  }
+
+  .tertiary-heading {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    row-gap: 6.4rem;
+    column-gap: 6.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+}
+
+/* BELOW 944px  */
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-section .grid {
+    grid-template-columns: 1fr;
+    padding: 0 6.4rem;
+  }
+
+  .hero-image {
+    width: 60%;
+  }
+
+  .delivered-content {
+    justify-content: center;
+    margin-top: 4.4rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 6.4rem;
+  }
+
+  .meal-attributes,
+  .meal-list-items,
+  .pricing-list {
+    gap: 2.4rem;
+  }
+
+  .meal-title {
+    font-size: 2.4rem;
+  }
+
+  .grid-gallery {
+    gap: 3.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+    row-gap: 2.8rem;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem 4.4rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* 
+
+    Hide navigation, When we use display none it allows no transitions at all
+    
+    Without using display none we can use 
+    1. Hide it visually i.e. opacity: 0;
+    2. Make it unaccessible to mouse and keyboard i.e. pointer-events: none;
+    3. Hide it from screen readers i.e. visibility: hidden 
+
+    */
+
+    transition: all 0.3s;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.4rem;
+  }
+
+  .nav-open .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 40em) {
+  /* .features-section,
+  .how-section,
+  .meal-section,
+  .testimonial-section,
+  .gallery-section,
+  .pricing-section,
+  .cta-section,
+  .footer {
+    padding: 4.8rem 0;
+  } */
+  .secondary-heading {
+    margin-bottom: 4.4rem;
+  }
+
+  .grid {
+    column-gap: 4.4rem;
+  }
+
+  .step-description {
+    font-size: 1.8rem;
+  }
+
+  .meal-section .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meal-list {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .pricing-item {
+    width: 100%;
+  }
+
+  .pricing-section .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--5-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .footer-nav {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .footer-logo,
+  .footer-contact {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 30em) {
+  .hero-section,
+  .features-section,
+  .how-section,
+  .meal-section,
+  .testimonial-section,
+  .gallery-section,
+  .pricing-section,
+  .cta-section,
+  .footer {
+    padding: 5.2rem 0;
+  }
+
+  .hero-image {
+    width: 90%;
+  }
+
+  .hero-section .grid {
+    padding: 0 3.2rem;
+  }
+
+  .logos {
+    justify-content: space-between;
+  }
+
+  .logos img {
+    height: 1rem;
+  }
+
+  .grid--2-cols,
+  .meal-section .grid,
+  .pricing-section .grid,
+  .cta {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .step-number {
+    font-size: 4.4rem;
+  }
+
+  .grid--3-cols,
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step-image-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-image-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+}
